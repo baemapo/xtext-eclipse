@@ -109,7 +109,7 @@ public abstract class AbstractScopeResourceDescriptionsTest {
 			if (!isResourceException)
 				throw Throwables.propagate(t);
 		} finally {
-			dirtyStateManager.discardDirtyState(mockDirtyResource);
+			dirtyStateManager.unmanageDirtyState(mockDirtyResource);
 		}
 	}
 
